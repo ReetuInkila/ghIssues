@@ -8,6 +8,8 @@ def get_gh_token():
     result = subprocess.run(['gh', 'auth', 'token'], stdout=subprocess.PIPE, text=True)
     return result.stdout.strip()
 
+# Ensure the label exists in the repository
+# If it doesn't exist, create it
 def ensure_label_exists(repo, label_name):
     try:
         return repo.get_label(label_name)
@@ -17,7 +19,7 @@ def ensure_label_exists(repo, label_name):
 
 def main(csv_filename):
     ACCESS_TOKEN = get_gh_token()
-    REPO_NAME = "ReetuInkila/TIDE-VSCode"
+    REPO_NAME = "your_username/your_repo" 
 
     g = Github(ACCESS_TOKEN)
     repo = g.get_repo(REPO_NAME)
