@@ -1,6 +1,3 @@
-Tässä on koko `README.md`-tiedostosi tällä hetkellä:
-
-```markdown
 # GitHub Issue Creator from Jira CSV
 
 Tämä skripti lukee Jira-exportoidun backlog CSV-tiedoston ja luo siitä GitHub-issueita käyttäen [PyGithub](https://pygithub.readthedocs.io/en/latest/):ia.
@@ -17,14 +14,11 @@ Tämä skripti lukee Jira-exportoidun backlog CSV-tiedoston ja luo siitä GitHub
 ## 🔨 Käyttö
 
 1. **Asenna riippuvuudet:**
-
    ```bash
    pip install -r requirements.txt
    ```
 2. **Jos et käytä gh CLI:tä**, aseta access token skriptiin nimellä `ACCESS_TOKEN`.
-
 3. **Aseta `REPO_NAME`** suoraan skriptiin.
-   ```
 
 4. **Suorita ohjelma:**
 
